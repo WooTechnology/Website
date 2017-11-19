@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>WooTech</title>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<!-- CSS -->
+  	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<script src="https://use.fontawesome.com/edced9f63c.js"></script>
+
+	<style type="text/css">
+	* {
+		color: white;
+		font-family: 'Questrial', sans-serif;
+	}
+	h1 {
+		padding: 50px 0;
+	}
+	p.uppercase {
+    text-transform: uppercase;
+	}
+	p {
+		text-align: center;
+	}
+	.main {
+		position: relative;
+		margin-bottom: -15px;
+		margin-top: -100px;
+		z-index: -1;
+	}
+	.main > h1 {
+	position: absolute;
+    bottom: -14px;
+    font-size: 12em;
+    left: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+	}
+	/* About */
+	.parallax { 
+    background-image: url("working_poster.jpg");
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+
+	.transparent-background {
+		background-color: rgba(101, 101, 101, 0.52);
+    	padding: 20px;
+	}
+
+	/* Program information */
+	#program-information {
+		padding-bottom: 73px;
+	}
+
+	#program-information h1 {
+		color: #A7CD85;
+		text-align: center;
+	}
+
+	#program-information h2,h3 {
+		color: #A7CD85;
+		text-align: justify;
+	}
+
+	/* Getting involved */
+	#getting-involved h1,h2 {
+		color: black;
+		text-align: center;
+	}
+	#getting-involved > [class*='col-'] {
+		display: -webkit-box;
+	  	display: -moz-box;
+ 		display: -ms-flexbox;
+  		display: -webkit-flex;
+  		flex-direction: column;
+	}
+	.center-block {
+		display: -webkit-box;
+	  	display: -moz-box;
+ 		display: -ms-flexbox;
+  		display: -webkit-flex;
+  		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding-bottom: 73px;
+	}
+	.info-box {
+		background-color: black;
+		color: white;
+		text-align: center;
+	}
+
+	button {
+		color: black;
+		padding: 10px;
+   		background-color: white;
+	}
+
+	figure {
+		padding: 0;
+		width: 100%;
+	}
+
+	.fixed {
+		display: -webkit-box;
+	  	display: -moz-box;
+ 		display: -ms-flexbox;
+  		display: -webkit-flex;
+  		display: flex;
+  		flex-wrap: wrap;
+  		/*border-color: pink;*/
+	}
+	.fixed > [class*='col-'] {
+  	display: flex;
+  	flex-direction: column;
+
+	}
+	.fixed-box {
+  		position: relative;
+  		display: flex;
+  		align-items: stretch;
+  		flex-direction: column;
+	}
+
+	.fixed-box header {
+		height: 7em;
+	}
+
+	.fixed-box p {
+    padding-bottom: 125px;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.8;
+    height: 250px;
+    text-align: justify;
+	}
+
+	.fixed-box figure {
+		align-self: center;
+		padding: 0;
+	}
+
+	@media screen and (max-width: 576px){
+		/* Getting involved */
+		.center-block {
+			justify-content:center;
+		}
+	}
+	</style>
+  </head>
+  <body>
+  	<div class="container-fluid">
+	  		<!-- Navigation Bar -->
+	  		<nav class="navbar navbar-inverse bg-inverse">
+	  			<div class="row">
+		  			<ul class="navbar-nav">
+		      			<li class="nav-item active">
+		       				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		     			</li>
+		     		</ul>
+		     	</div>
+		     	<div class="row text-center">
+		     		<img src="https://i.imgur.com/kITRVjw.jpg" width="100" alt="WooTech">
+	     		</div>
+	     		<div class="text-center">
+	     			<p>Women Wooing Technology</p>
+	     		</div>
+			</nav>
+			<!-- SECTION 1: IMAGE -->
+			<section class="row main">
+				<video src="homepage_edited.mp4" autoplay poster="wooTech-poster.png" width="100%" loop="true">
+				</video>
+				<h1>WELCOME <br/>TO<br/>WOO-TECH</h1>
+			</section>
+			<!-- SECTION 2: ABOUT -->
+	  		<section class="row parallax" style="background-color:#AC93E3;">
+	  			<div class="container">
+		  			<header class="row">
+		  				<h1>About</h1>
+		  			</header>
+		  			<div class="transparent-background">
+			  			<p>WooTech, standing for "Women Wooing Technology" hopes to provide a mentorship platform to women in technology and guide them in their career. The mentorship platform is open to everyone including students, working professionals or just anyone curious about technology.
+						Woo-Tech aims to:</p>
+						<ul>
+							<li>Encourage and involve more women in technological fields</li>
+							<li>Help students build careers by matching them with mentors in the professional fields</li>
+							<li>Help professions/non-students seeking to move into technical career by matching them with students</li>
+						</ul>
+					</div>
+				</div>
+	  		</section>
+	  		<!-- SECTION 3: MENTORSHIP PROGRAM INFORMATION -->
+	  		<section id="program-information" class="row" style="background-color:black;">
+		  		<div class="container">
+		  			<!-- Mentorship program heading -->
+		  			<header>
+		  				<h1>Mentorship Program</h1>
+		  			</header>
+		  			<!-- Types of mentorships -->
+		  			<div class="row fixed">
+			  			<div class="col-md-4 col-sm-12">
+			  				<div class="fixed-box">
+				  				<!-- Heading -->
+			  					<header>
+			  						<h3>GENERAL MENTORSHIP</h3>
+			  					</header>
+				  				<!-- Description -->
+				  				<p>Depending on the availability of mentors and interest of mentees in field, we also do peer-to-peer and professional-to-professional mentor-mentee matches in line with a standard mentorship program.</p>
+				  	
+				  				<!-- Image -->
+			  					<figure>
+		  		 					<img src="placeholder_image.png" alt="General Mentorship Image" width="100%"> 
+		  		 				</figure>
+	  		 				</div>
+			  			</div>
+			  			<div class="col-md-4 col-sm-12">
+			  				<div class="fixed-box">
+				  				<!-- Heading -->
+				  				<header>
+				  					<h3>STUDENT MENTEES TO PROFESSIONAL MENTORS</h3>
+				  				</header>
+				  				
+				  				<!-- Description -->
+				  				<p>Experience and exposure to the technical industry is very different from what happens in a university. Through the student-senior mentorship we aim to connect freshmen/junior level students with seniors or working professionals to help them clarify their perspective. Seniors - Don’t you ever wish there were things you knew, or things you could have done better if you were to go back in time?</p>
+				  				
+				  				<!-- Image -->
+				  				<figure>
+			  		 				<img src="placeholder_image.png" alt="Student Mentorship Image" width="100%">
+			  		 			</figure>
+		  		 			</div>
+			  			</div>
+			  			<div class="col-md-4 col-sm-12">
+			  				<div class="fixed-box">
+				  				<!-- Heading -->
+				  				<header>
+				  					<h3>PROFESSIONAL MENTEES TO STUDENT MENTORS</h3>
+				  				</header>
+				  				<!-- Description -->
+				  				<p>There are many professionals who have no background in coding but would like to get started. However, it is not as easy for them as it is for students! They don’t know what online courses are good, what are bad? What are the current trends? But CS students have access and knowledge about many of these resources and more. Through this unique reverse mentorship we aim to provide professionals a fresh view of the industry</p>
+				  				<!-- Image -->
+				  				<figure>
+			  		 				<img src="placeholder_image.png" alt="Professinal Mentorship Image" width="100%">
+			  		 			</figure>
+			  				</div>
+			  			</div>
+			  		</div>
+		  		</div>
+	  		</section>
+	  		<!-- SECTION 4: GETTING INVOLVED INFORMATION -->
+	  		<section id="getting-involved" class="row" style="background-color:#A7CD85">
+	  		 	<div class="container">
+	  		 		<!-- Heading -->
+		  			<header class="row">
+		  				<h1>Getting involved with WooTech</h1>
+		  			</header>
+	  		 		<div class="row center-block">
+		  		 		<!-- Sign up as a mentee -->
+		  		 		<div class="col-md-4 col-sm-12 info-box" >
+		  		 			<div class="row">
+		  		 				<figure>
+		  		 				<img src="placeholder_image.png" alt="Mentor helping" width="100%">
+		  		 				</figure>
+		  		 			</div>
+		  		 			<div class="row">
+		  		 				<h4>AS A MENTEE</h4>
+		  		 				<p> Get involved as a mentee</p>
+		  		 				<p><button>Sign up as a mentee</button></p>
+		  		 			</div>
+		  		 		</div>
+		  		 		<!-- Sign up as a mentor -->
+		  		 		<div class="col-md-4 col-sm-12 info-box" >
+		  		 			<div class="row">
+		  		 				<h4>AS A MENTOR</h4>
+		  		 				<p> Get involved as a mentor</p>
+		  		 				<p><button>Sign up as a mentor</button></p>
+		  		 			</div>
+		  		 			<div class="row">
+		  		 				<figure>
+		  		 				<img src="placeholder_image.png" alt="Mentor helping" width="100%">
+		  		 				</figure>
+		  		 			</div>
+		  		 		</div>
+		  		 	</div>
+	  		 	</div>
+	  		</section>
+	  		<!-- SECTION 5: SOCIAL LINKS -->
+	  		<section class="row" style="background-color:black">
+	  			<div class="row">
+	  				<p>wootech7@gmail.com<br/>
+	  				Singapore</p>
+	  			</div>
+	  			<div class="row">
+	  				<!-- Group of Elements -->
+					  <p>
+					  <a href="https://www.facebook.com/wootechnology/">
+					  	<i class="fa fa-facebook" aria-hidden="true"></i>
+					  </a>
+					  <a href="https://www.twitter.com/WooTechology">
+					  <i class="fa fa-twitter" aria-hidden="true"></i>
+					  </a>
+					  <a href="https://www.medium.com/@wootech7">
+					  <i class="fa fa-medium" aria-hidden="true"></i>
+					  </a>
+					  <a href="https://join.slack.com/t/wootech/signup">
+					  <i class="fa fa-slack" aria-hidden="true"></i>
+					  </a>
+					  </p>
+	  			</div>
+	  		</section>
+	  		<footer class="row" style="background-color:#AC93E3;">
+	  			<p class="uppercase" style="text-align:center">&copy; 2017 by WOO-TECH</p>
+	  		</footer>
+	  	</div>
+  </body>
+ </html>
