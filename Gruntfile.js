@@ -100,6 +100,13 @@ module.exports = function(grunt) {
           src: 'source/fixed/*',
           dest: 'static/',
           filter: 'isFile'
+        },
+        {
+          expand: true,
+          flatten: true,
+          src: 'source/images/*',
+          dest: 'static/',
+          filter: 'isFile'
         }]
       },
     }
