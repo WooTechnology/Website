@@ -7,7 +7,7 @@
   	<!-- CSS -->
   	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="source/css/home-min.css">
+	<link rel="stylesheet" href="source/css/home.css">
 
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Questrial|Tangerine" rel="stylesheet">
@@ -24,10 +24,10 @@
 		       				<a href="#">Home</a>
 		     			</li>
 		     			<li class="navbar-item">
-		       				<a href="#">FAQ</a>
+		       				<a class="ihaveatip" href="#">FAQ<span class="tooltiptext">Coming soon</span></a>
 		     			</li>
 		     			<li class="navbar-item">
-		       				<a href="#">Mentors</a>
+		       				<a class="ihaveatip" href="#">Mentors<span class="tooltiptext">Coming soon</span></a>
 		     			</li>
 		     		</ul>
 		     		<ul class="navbar-menu-right">
@@ -42,7 +42,8 @@
 		     		</ul>
 		     	</div>
 		     	<div class="row text-center">
-		     		<img src="https://i.imgur.com/kITRVjw.jpg" width="100" alt="WooTech">
+		     		<img src="source/svg/Wootech-logo.svg" width="100" alt="WooTech">
+		     		<!-- <img src="https://i.imgur.com/kITRVjw.jpg" width="100" alt="WooTech"> -->
 	     		</div>
 	     		<div class="text-center">
 	     			<p>Women Wooing Technology</p>
@@ -54,12 +55,11 @@
 			<!-- <div class="container"> -->
 				<video src="static/homepage_edited.mp4" autoplay poster="static/wooTech-poster.png" width="100%" loop="true">
 				</video>
-				<!-- <img src="static/placeholder_image-laptop.png" width="100%"> -->
-				<h1>WELCOME <br/>TO<br/>WOO-TECH</h1>
+				<h1>WELCOME TO WOO-TECH</h1>
 			<!-- </div> -->
 		</section>
 		<!-- SECTION 2: ABOUT -->
-  		<section class="row parallax" style="background-color:#AC93E3;">
+  		<section id="about" class="row parallax">
   			<div class="container">
 	  			<div class="transparent-background">
 	  				<header>
@@ -76,7 +76,7 @@
 			</div>
   		</section>
   		<!-- SECTION 3: MENTORSHIP PROGRAM INFORMATION -->
-  		<section id="program-information" class="row" style="background-color:black;">
+  		<section id="program-information" class="row">
 	  		<div class="container">
 	  			<!-- Mentorship program heading -->
 	  			<header>
@@ -157,7 +157,7 @@
 	  		</div>
   		</section>
   		<!-- SECTION 4: GETTING INVOLVED INFORMATION -->
-  		<section id="getting-involved" class="row" style="background-color:#A7CD85">
+  		<section id="getting-involved" class="row">
   		 	<div class="container">
   		 		<!-- Heading -->
 	  			<header class="row">
@@ -175,13 +175,20 @@
 					            static/working_poster-large_laptop.jpg 768w,
 					            static/working_poster-large_laptop.jpg 800w,
 					            static/working_poster-large_laptop.jpg 1600w"
-					          	alt="Menee helped" sizes="100vw" width="100%"> 
+					          	alt="Mentee helped" sizes="100vw" width="100%"> 
 					         </figure>
 	  		 			</div>
 	  		 			<div class="row">
 	  		 				<h4>AS A MENTEE</h4>
 	  		 				<p> Get involved as a mentee</p>
-	  		 				<p><button>Sign up as a mentee</button></p>
+	  		 				<p>	  		 		
+  		 					<form method="get" action="https://goo.gl/forms/he7SafMYagpKbuOF2">
+  		 						<button type="submit">Sign up as a mentee</button>
+  		 					</form>
+  		 					<form method="get" action="https://goo.gl/forms/2XvzqfDIZukl4JIv1">
+  		 						<button type="submit">Both!</button>
+  		 					</form>
+  		 					</p>
 	  		 			</div>
 	  		 		</div>
 	  		 		<!-- Sign up as a mentor -->
@@ -189,7 +196,14 @@
 	  		 			<div class="row">
 	  		 				<h4>AS A MENTOR</h4>
 	  		 				<p> Get involved as a mentor</p>
-	  		 				<p><button>Sign up as a mentor</button></p>
+	  		 				<p>
+	  		 					<form method="get" action="https://goo.gl/forms/muRmWOJNsSzc6MRf1">
+	  		 						<button type="submit">Sign up as a mentor</button>
+	  		 					</form>
+	  		 					 <form method="get" action="https://goo.gl/forms/2XvzqfDIZukl4JIv1">
+  		 						<button type="submit">Both!</button>
+  		 						</form>
+	  		 				</p>
 	  		 			</div>
 	  		 			<div class="row">
 	  		 				<figure>
@@ -208,7 +222,7 @@
   		 	</div>
   		</section>
   		<!-- SECTION 5: SOCIAL LINKS -->
-  		<section id="social-links" class="row" style="background-color:black">
+  		<section id="social-links" class="row">
   			<div class="row">
   				<p>wootech7@gmail.com<br/>
   				Singapore</p>
@@ -231,8 +245,9 @@
 				  </p>
   			</div>
   		</section>
-  		<footer class="row" style="background-color:#AC93E3;">
+  		<footer class="row">
   			<p class="uppercase" style="text-align:center">&copy; 2017 by WOO-TECH</p>
+  			<p style="font:0.2em;padding:0;"> All images have been obtained under the creative commons license from WOCinTech Chat <a href="https://www.flickr.com/photos/wocintechchat/22359007740">Flicker</a></p>
   		</footer>
   </body>
  </html>
