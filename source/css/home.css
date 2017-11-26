@@ -272,14 +272,21 @@ footer > p {
 	padding:10px;
 	margin: 0;
 }
-
+/*Small mobiles*/
 @media screen and (max-width: 576px){
 	/* Getting involved */
 	.center-block {
 		justify-content:center;
 	}
+	.navigation {
+		font-size: 0.5em;
+	}
+	.transparent-background {
+		font-size: 0.9em;
+	}
 }
 
+/*Medium size mobiles*/
 @media screen and (max-width: 374px){
 	.parallax { 
 			 background-image: url("../../static/working_poster-large_laptop.jpg");
@@ -288,7 +295,14 @@ footer > p {
 		top:5%;
 		font-size: 2em;
 	}
+	.navigation {
+		font-size: 0.5em;
+	}
+	.transparent-background {
+		font-size: 0.9em;
+	}
 }
+/*Large mobiles*/
 @media screen and (min-width: 375px) and (max-width: 424px){
 	.parallax { 
 			 background-image: url("../../static/working_poster-large_laptop.jpg");
@@ -297,8 +311,15 @@ footer > p {
 		top:5%;
 		font-size: 2em;
 	}
+	.navigation {
+		font-size: 0.5em;
+	}
+	.transparent-background {
+		font-size: 0.9em;
+	}	
 
 }
+/*Tablets*/
 @media screen and (min-width: 424px) and (max-width: 767px){
 	.parallax { 
 			 background-image: url("../../static/working_poster-large_laptop.jpg");
@@ -307,18 +328,23 @@ footer > p {
 		top:5%;
 		font-size: 2em;
 	}
-
+	.transparent-background {
+		font-size: 0.9em;
+	}
 }	
+/*bigger tablets*/
 @media screen and (min-width: 768px) and (max-width: 800px){
 	.parallax { 
 			 background-image: url("../../static/working_poster-large_laptop.jpg");
 		}	
 }
+/*Laptops*/
 @media screen and (min-width: 800px) and (max-width: 1600px){
 	.parallax { 
 			 background-image: url("../../static/working_poster-large_laptop.jpg");
 		}
 }
+/*Bigger screens*/
 @media screen and (min-width: 1600px) {
 	.parallax { 
 			 background-image: url("../../static/working_poster-large_laptop.jpg");
