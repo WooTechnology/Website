@@ -1,6 +1,13 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    // minify CSS
+    cssmin: {
+    my_target: {
+        src: 'source/css/home.css',
+        dest: 'source/css/home.min.css'
+      }
+    },
     responsive_images: 
     {
       dev: {
@@ -9,37 +16,37 @@ module.exports = function(grunt) {
           sizes: [{
           // Small mobile devices
           name: 'small_mobile',
-          quality: 50,
+          quality: 100,
           width: 320
           },
           {
           // Medium mobile devices 
           name: 'medium_mobile',
-          quality: 50,
+          quality: 100,
           width: 375
           },
           {
           // Large Mobile devices 
           name: 'large_mobile',
-          quality: 50,
+          quality: 100,
           width: 425
           },
           {
           // Tablets
           name: 'tablets',
-          quality: 50,
+          quality: 100,
           width: 768
           },
           {
           // Laptops
           name: 'laptop',
-          quality: 50,
+          quality: 100,
           width: 800
           },
           {
           // Laptops
           name: 'large_laptop',
-          quality: 50,
+          quality: 100,
           width: 1600
           }
 
@@ -116,7 +123,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-css');
   grunt.loadNpmTasks('grunt-mkdir');
-  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images','imagemin']);
+  grunt.registerTask('default', ['clean', 'mkdir', 'copy','cssmin','responsive_images','imagemin']);
 
 };

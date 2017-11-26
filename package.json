@@ -5,6 +5,7 @@
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-css": "^0.5.4",
     "grunt-mkdir": "^1.0.0",
     "grunt-responsive-images": "^1.10.1"
   },
