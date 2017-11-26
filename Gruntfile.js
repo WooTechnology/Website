@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     cssmin: {
     my_target: {
         src: 'source/css/home.css',
-        dest: 'source/css/home.min.css'
+        dest: 'source/css/home-min.css'
       }
     },
     responsive_images: 
